@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-3">Buscar usuario por Id</h1>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" [(ngModel)]="valor">
+  </div>
+
+<div class="d-flex justify-content-center">
+  <button type="button"  (click)="filterUserId()">Buscar</button>
+</div>
+
+<div class="d-flex justify-content-center mt-5">
+  <div class="card mb-3" *ngIf="user.name">
+    <div class="card-body ">
+      <h5 class="card-title">{{ user.name }}</h5>
+      <p class="card-text">Email: {{ user.email }}</p>
+      <p class="card-text">User: {{ user.username }}</p>
+      <p class="card-text">Phone: {{ user.phone }}</p>
+      <p class="card-text">Company: {{ user.company.name }}</p>
+    </div>
+</div>
+  </div>
+</div>
