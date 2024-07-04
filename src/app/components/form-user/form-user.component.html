@@ -5,28 +5,30 @@
         </h1>
         <div class="mb-3 inputGroup">
           <label for="name" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nameUser" aria-describedby="name" [(ngModel)]="name" required>
+          <input type="text" class="form-control" id="nameUser"  [(ngModel)]="name" required>
         </div>
         
         <div class="mb-3 inputGroup ">
             <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="emailUser" aria-describedby="email" [(ngModel)]="email" required>
+            <input type="email" class="form-control" id="emailUser"  [(ngModel)]="email" required>
           </div>
 
           <div class="mb-3 inputGroup">
             <label for="exampleInputEmail1" class="form-label">Número de teléfono</label>
-            <input type="text" class="form-control" id="numberPhoneUser" aria-describedby="emailHelp" [(ngModel)]="phone" required>
+            <input type="text" class="form-control" id="numberPhoneUser" [(ngModel)]="phone" required>
           </div>
 
           <div class="mb-3 inputGroup">
             <label for="exampleInputEmail1" class="form-label">Dirección</label>
-            <input type="text" class="form-control" id="adress" aria-describedby="emailHelp" [(ngModel)]="adress" required>
+            <input type="text" class="form-control" id="adress" [(ngModel)]="adress" required>
           </div>
        <div class="d-flex justify-content-center">
         <button type="submit" (click)="validateForm()">Enviar Formulario</button>
 
        </div>
-        
-      
 </div>
 
+
+<div class="d-flex justify-content-center mt-3">
+  <a routerLink="/user-list">Punto 1</a>
+</div>
